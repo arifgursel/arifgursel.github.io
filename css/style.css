@@ -1,0 +1,295 @@
+/*CSS reset settings here*/
+*{
+ margin: 0px;
+ padding: 0px;
+}
+
+/*============ ELEMENT OVERRIDES==============*/
+html{
+	font-family: Arial, sans-serif;
+	font-size: 1em;
+}
+p, hr{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/*============ IMAGE MANIPUATION=============*/
+/* Logo Container. This will access the main logo image and used for direct manupulation*/
+#logo{
+
+}
+#logo img{
+	width: 150px;
+	height: auto;
+	margin: 15px 0px 2px 125px;
+	padding: 5px;
+	border: 2px solid yellow;
+	border-radius: 5px;
+}
+#logo h6{
+	text-align: center;
+	margin-bottom: 5px;
+	text-transform: capitalize;
+}
+/* Logo Container. This will access the footer logo image and used for direct manupulation*/
+#logo-footer img{
+	width: 50px;
+	height: auto;
+	margin: 10px;
+}
+
+
+/*============ MAIN LEGO BLOCKS==============*/
+/* Master Container */
+#container{
+	width: 100%;
+	margin: 0px auto;
+}
+/*Main Top Container. This will hold all divs that makeup the first major block*/
+#header{
+	display: block;
+	height: auto;
+	background-color: grey;
+ 
+}
+/*Main Side Container. This will hold all divs that makeup the side bar and displays as an inline block*/
+#sidebar{
+	background-color: #99FF99;
+	width: 140px;
+	display: inline-block;
+	vertical-align: top;
+	margin: 10px 15px;
+	padding: 10px;
+
+}
+/*Main Content Container. This will hold all divs that makeup the content block and displays as an inline block*/
+#content{
+ 	background-color: LEMONCHIFFON;
+ 	display: block;
+ 	width: 100%;
+ 	margin: 0px 0px;
+ 	padding: 10px;
+}
+ 	#content ul, ol{
+ 		margin-top: 10px;
+ 		margin-bottom: 10px;
+ 	}
+	#content ul li, ol li{
+		margin-left: 20px;
+	}
+/*Main Top Container. This will hold all divs that makeup the first major block*/
+#footer{
+	display: block;
+	height: auto;
+	background-color: grey;
+}
+/*============ MAIN HEADER BLOCKS==============*/
+/* Header Element Container. This will hold other divs and display as an inline block*/
+.block{
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 0px;
+	width: 32%;
+}
+
+/*============ MAIN NAVIGATION BLOCKS==============*/
+/* Navigation Container. This will hold a horizontol list of elements and display and a block*/
+.nav-hor{
+	height: auto;
+	padding: 5px 15px;
+	margin-top: 0px;
+}
+	.nav-hor ul li{
+		display: inline;
+	}
+	
+	.nav-hor ul li:first-child{
+		border-left: 1px solid black;
+	}
+	.nav-hor ul li:nth-child(even){
+		border-bottom: 1px solid red;
+	}
+	.nav-hor ul li:nth-child(odd){
+		border-bottom: 1px solid blue;
+	}
+	.nav-hor ul li:last-child{
+		border-right: 1px solid black;
+	} 
+
+/* Navigation Container. This will hold a vertical list of elements and display and a block*/
+.nav-ver{
+	width: 100px;
+
+}
+	.nav-ver ul{
+		text-decoration: underline;
+		font-size: .75em;
+		margin-left: 10px;
+	}
+
+	.nav-ver ul li{
+		margin-bottom: 5px;
+	}
+/*============ FORM EDITS==============*/
+form{
+		border: 2px solid black;
+		border-radius: 15px;
+		background-color: #D4DBE3;
+		padding: 10px;
+		margin: 15px 0;
+		overflow: auto;
+}	
+	.formIcon{
+		margin: 0px 0px;
+		vertical-align: top;
+		float: left;
+	}
+
+label{
+	color: black;
+	font-size: .8em;
+	font-weight: bold;
+	display: inline-block;
+	margin: 0px 5px;
+}
+
+input[type="text"]{
+	display: inline-block;
+	border-radius: 3px;
+	width: 140px;
+	height: 20px;
+	margin: 0px 5px;
+}
+
+input[type="password"]{
+	display: inline-block;
+	border-radius: 3px;
+	height: 20px;
+	width: 200px;
+	margin: 0px 5px;
+}
+
+input[type="submit"]{
+	border-radius: 3px;
+	height: 20px;
+	margin: 0px 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+/*============ CUSTOM & WIDGETS==============*/
+#weather h1{
+	display: inline-block;
+}
+#weather h6{
+	margin: 10px 0px;
+}
+#weather img{
+	vertical-align: bottom;
+}
+#map, #cityinfo{
+	width: 48%;
+	height: 400px;
+	display: inline-block;
+	vertical-align: top;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+.newsBar{
+	background: black;
+	border-top: 1px solid yellow;
+	display: block;
+	margin: 0px 0px;
+	font-size: 10px;
+	font-weight: bold;
+	color: white;
+	padding: 5px 20px;
+}
+
+.picarea{
+	display: inline-block;
+	vertical-align: top;
+	height: 302px;
+	width: auto;
+}
+
+.blogstrip{
+	display: block;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.blogpost{
+	display: inline-block;
+	height: auto;
+	width: 30%;
+	border: 2px solid grey;
+	background-color: white;
+	margin: 10px 5px 15px 5px;
+}
+	.blogpost p{
+		color: blue;
+		/*clear: left;    	Activate to keep text from wrapping when elements floated left*/
+		/*clear: right; 	Activate to keep text from wrapping when elements floated right*/
+	}
+
+.blogpic{
+	width: 80px;
+	height: 80px;
+	border: 1px solid black;
+	margin: 10px;	
+	float: left;
+}
+
+/*============ DECORATION CLASSES==============*/
+.blueBox{
+	border: 1px solid white;
+	background-color: blue;
+	color: white; 
+	padding: 10px 10px;
+}
+.yBox{
+	border: 3px solid yellow;
+}
+.blkBox{
+	border: 3px solid black;
+}
+.grnBox{
+	border: 3px solid green;
+}
+.rBox{
+	border: 1px solid red;
+}
+.bold{
+	font-weight: bold;
+}
+.under{
+	text-decoration: underline;
+}
+.blkBack{
+	background-color: #689BFF;
+}
+.rBack{
+	background-color: #FD9A98;
+}
+.yBack{
+	background-color: #FECB00;
+}
+.grnBack{
+	background-color: #1FCA21;
+}
+.grn{
+	color: green;
+}
+.blu{
+	color: blue;
+}
+.ylw{
+	color: yellow;
+}
+.red{
+	color: red;
+}
+

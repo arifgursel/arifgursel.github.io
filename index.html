@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Weather Ajax App</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon" href="img/favicon.png" type="image/png">
+	<link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <script src="https://code.jquery.com/jquery-2.1.3.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="js/weather.js"></script>
+    <script type="text/javascript">
+		$( document ).ready(function() 
+		{
+			$('#weatherform').submit(function(){
+				getWeather($('#city').val());
+				return false;
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+			<div class="block logo" id="logo">
+				<img src="img/logo.png" alt="Logo File" id="">
+				<h6 id='logotag'>technology consulting &amp; brand marketing agency</h6>
+			</div>
+			<div class="block"></div>
+			<div class="block">
+				<div>
+					<form id="weatherform" method="POST">
+						<img src="img/icon.png" alt="Icon Image" class="formIcon">
+						<label>Enter City: </label><input type="text" name="city" id="city">
+						<input type="submit" value="Search Weather">
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="newsBar">
+        	<p>Storm Update: <span class="ylw">Tsunami spotted off the coast of Australia....</span></p>
+      	</div>
+      	<div id="content">
+      		<div id="weather">
+      			<h3>Enter the city you would like the weather report of above</h3>
+      		</div>
+      		<div id="map" class="">
+      			
+      		</div>
+      		<div id="cityinfo">
+      			
+      		</div>
+      	</div>
+		<div id="footer">
+			<div class="block" id="logo-footer"><img src="img/logo.png" alt="Logo File"></div>
+		</div>
+	</body>
+</html>
